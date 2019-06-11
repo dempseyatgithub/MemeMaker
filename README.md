@@ -1,7 +1,7 @@
 MemeMaker
 =================================
 
-MemeMaker is a very small little app using SwiftUI to show a few things:
+MemeMaker is a little app using SwiftUI that shows a few things:
 
 - Using ZStacks to compose text over an image to make a meme
 - Using a named font instead of one of the semantic font styles
