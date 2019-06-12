@@ -14,27 +14,22 @@ struct ExampleList: View {
                 ExampleRow(
                     title: "Overlay Modifier",
                     subtitle: "So far the cleanest example yet",
-                    exampleView: AnyView(
-                        OverlayMeme()
+                    exampleView: OverlayMeme()
                             .navigationBarTitle(Text("Overlay Modifier"), displayMode: .inline)
-                    )
                 )
                 
                 ExampleRow(
                     title: "Nested ZStacks",
                     subtitle: "The original example",
-                    exampleView: AnyView(
-                        NestedZStacks()
+                    exampleView: NestedZStacks()
                             .navigationBarTitle(Text("Nested ZStacks"), displayMode: .inline)
-                    )
                 )
 
                 ExampleRow(
                     title: "Text Gone Wild",
                     subtitle: "An example of not getting the desired layout",
-                    exampleView: AnyView(
-                        TextGoneWild()
-                            .navigationBarTitle(Text("Text Gone Wild"), displayMode: .inline)
+                    exampleView: TextGoneWild()
+                            .navigationBarTitle(Text("Text Gone Wild"), displayMode: .inline
                     )
                 )
 
@@ -45,10 +40,10 @@ struct ExampleList: View {
 }
 
 
-struct ExampleRow: View {
+struct ExampleRow<T: View>: View {
     var title: String
     var subtitle: String
-    var exampleView: AnyView
+    var exampleView: T
     
     var body: some View {
         NavigationButton(destination: exampleView) {
