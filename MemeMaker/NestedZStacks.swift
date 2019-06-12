@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  NestedZStacks.swift
 //  MemeMaker
 //
 //  Created by James Dempsey on 6/11/19.
@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-struct ContentView : View {
+struct NestedZStacks : View {
     private let fontName = "HelveticaNeue-CondensedBlack"
     
-    // Is nesting ZStacks the best way to do this? I have no idea.
-    // If you figure out a cleaner way feel free to Tweet or Micro.blog me at @jamesdempsey
+    //     Is nesting ZStacks the best way to do this? I have no idea.
+    //     If you figure out a cleaner way feel free to Tweet or Micro.blog me at @jamesdempsey
     var body: some View {
         
         
@@ -49,12 +49,16 @@ struct ContentView : View {
         }
     }
     
+    
+    
+    
 }
 
+
 #if DEBUG
-struct ContentView_Previews : PreviewProvider {
+struct NestedZStacks_Previews : PreviewProvider {
     static var previews: some View {
-        ContentView()
+        NestedZStacks()
     }
 }
 #endif
